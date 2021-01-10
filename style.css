@@ -1,0 +1,95 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+
+:root {
+  --primary-font: "Montserrat", sans-serif;
+}
+
+body,
+html {
+  margin: 0;
+  height: 100%;
+  font-size: 16px;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.pimg1 {
+  background-image: url("https://cdn.pixabay.com/photo/2017/11/16/08/02/led-2953665_1280.jpg");
+  min-height: 100%;
+  width: 100%;
+  position: relative;
+  opacity: 0.9;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+.ptext {
+  position: absolute;
+  top: 25%;
+  width: 100%;
+  text-align: center;
+  color: rgb(250, 248, 248);
+  font-family: var(--primary-font);
+
+  letter-spacing: 8px;
+  text-transform: uppercase;
+}
+
+.title {
+  font-size: 8rem;
+  font-weight: 800;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 10vh;
+  font-family: var(--primary-font);
+}
+
+.nav-links {
+  display: flex;
+  list-style: none;
+  color: white;
+}
+
+.nav-links li {
+  padding-left: 2rem;
+  font-size: 2rem;
+  margin-right: 4rem;
+  cursor: pointer;
+}
+
+.info {
+  text-align: center;
+  margin-top: 3rem;
+  font-family: var(--primary-font);
+  font-size: 2rem;
+  line-height: 4rem;
+}
+
+.info2 {
+  display: flex;
+  flex-direction: row;
+  margin-top: 5rem;
+}
+
+.items {
+  padding: 9rem;
+  font-family: var(--primary-font);
+  font-size: 2rem;
+  line-height: 3.5rem;
+}
+
+.small-img {
+  width: 40%;
+  height: 400px;
+  margin-top: 2rem;
+  margin-left: 12rem;
+}
