@@ -6,7 +6,8 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Aziz LED Lights</title>
     <link rel="stylesheet" href="style.css" />
-    <script src="script.js"></script>
+    
+    <script src="https://unpkg.com/scroll-out@2.2.3/dist/scroll-out.min.js"></script>
   </head>
   <body>
     <div class="pimg1">
@@ -18,25 +19,17 @@
       </nav> -->
       <div class="ptext">
         <h1 class="title">Aziz Led Lights</h1>
-        <button class="location-btn">Get Location</button>
+        <h2>Houston Texas</h2>
+        <button  onclick="document.location ='#location'" class="location-btn">Get Location</button>
       </div>
     </div>
-    <section class="content">
+    <section data-scroll class="content">
       <div class="info">
         <h1>Great Quality Lights</h1>
         <h1>At Affordable Prices</h1>
       </div>
 
-      <div class="info2">
-        <div class="items">
-          <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Itaque totam, libero expedita a voluptates minima blanditiis deserunt quam aspernatur,</p>
-        </div>
-        <img
-          class="small-img"
-          src="https://raw.githubusercontent.com/fkhan698/LED-Lights/main/images/light.jpeg"
-          alt=""
-        />
-      </div>
+     
       <div class="container">
         <div class="gallery">
 
@@ -55,13 +48,22 @@
           <div class="gallery-item">
             <img class="gallery-image" src="https://cdn.pixabay.com/photo/2017/11/16/08/01/led-2953657_1280.jpg" alt="car interior from central back seat position showing driver and blurred view through windscreen of a busy road at night">
           </div>
-      
-      
-      
         </div>
       </div>
+      <div data-scroll class="info2">
+        <div class="items">
+          <p>Lighting can make a big difference in the interior and exertior environment of your home and business. Good lighting provides safety, security and a sense of comfort. It is what allows to adapt to the mood and ambience of our homes and businesses</p>
+          <br>
+          <p>To assist you in finding the perfect light fixtures please feel free to visit our store or contact Muzzaffar Aziz Khan</p>
+        </div>
+        <img
+          class="small-img"
+          src="https://raw.githubusercontent.com/fkhan698/LED-Lights/main/images/light.jpeg"
+          alt=""
+        />
+      </div>
       
-      <div class="hours">
+      <div data-scroll id="hours" class="hours">
         <h1 class="info">Hours</h1>
         <div class="hours-container">
           <h1>Monday-Saturday .... 9:30AM–7PM</h1>
@@ -69,14 +71,16 @@
         </div>
       </div>
     </section>
+<section id="closer">
 
-    <div class="pimg2">
+</section>
+    <div id="location" class="pimg2">
             <div class="contact-container">
                     <div id="contact" class="contact-info">
                         <h1 id="find-us"><u>Where to Find Us</u></h1>
-                        <p> <a id="directions" href="https://www.google.com/maps/dir//Walnut+Street+Barber+Shop,+205+E+Walnut+St,+Springfield,+MO+65806/@37.2072403,-93.2942356,17z/data=!4m9!4m8!1m0!1m5!1m1!1s0x87cf630246d0e6f9:0xc36a60dcfac01a96!2m2!1d-93.2920469!2d37.2072403!3e0?hl=en&authuser=0">205 E Walnut St Springfield, Missouri 65806 (At Corner of Walnut and South)</a></p>
+                        <p> <a id="directions" href="https://www.google.com/maps/place/Aziz+LED+LIGHT/@33.4035892,-99.0612006,6z/data=!4m19!1m13!4m12!1m4!2m2!1d-93.1880093!2d37.2009578!4e1!1m6!1m2!1s0x8640c362b971f5fd:0xe992e27bdda7f80c!2saziz+led+light!2m2!1d-95.5033493!2d29.7186622!3m4!1s0x8640c362b971f5fd:0xe992e27bdda7f80c!8m2!3d29.7186622!4d-95.5033493"> 6855 Harwin Dr. A, Houston, TX 77036</a></p>
                     
-                        <p><u>Contact Us:</u> <p>(417) 831-3570</p></p>
+                        <p><u>Contact Us:</u> <p>(417) 396-9030</p></p>
                     
                         
                     </div>
@@ -84,9 +88,19 @@
                 </div>
     </div>
     <footer>
-            <p><a id="directions" href="https://www.google.com/maps/dir//Walnut+Street+Barber+Shop,+205+E+Walnut+St,+Springfield,+MO+65806/@37.2072403,-93.2942356,17z/data=!4m9!4m8!1m0!1m5!1m1!1s0x87cf630246d0e6f9:0xc36a60dcfac01a96!2m2!1d-93.2920469!2d37.2072403!3e0?hl=en&authuser=0">205 E Walnut St Springfield, Missouri 65806 </a>| </p>
-            <p>(417) 831-3570 | </p>
+            <p><a id="directions" href="https://www.google.com/maps/place/Aziz+LED+LIGHT/@33.4035892,-99.0612006,6z/data=!4m19!1m13!4m12!1m4!2m2!1d-93.1880093!2d37.2009578!4e1!1m6!1m2!1s0x8640c362b971f5fd:0xe992e27bdda7f80c!2saziz+led+light!2m2!1d-95.5033493!2d29.7186622!3m4!1s0x8640c362b971f5fd:0xe992e27bdda7f80c!8m2!3d29.7186622!4d-95.5033493">6855 Harwin Dr. A, Houston, TX 77036</a>| </p>
+            <p>(417) 396-9030| </p>
            <p>Site developed by<a href="http://www.faizanzkhan.com">   Faizan Khan</a></p>
         </footer>
+
+        
+        <script>
+          ScrollOut({
+            threshold: 0.1,
+            once: true,
+            scrollingElement: "body html"
+        });
+
+        </script>
   </body>
 </html>
