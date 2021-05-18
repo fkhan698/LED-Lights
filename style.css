@@ -233,7 +233,7 @@ Remove or comment-out the code block below to see how the browser will fall-back
   border-style: var(--border-style);
   border-width: var(--border-width);
   border-radius: 2%;
-  background-color: white;
+  background-color: rgb(241, 220, 220);
 }
 
 .contact-info {
