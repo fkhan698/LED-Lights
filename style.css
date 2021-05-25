@@ -35,7 +35,7 @@ html {
 }
 .pimg2 {
   overflow: hidden;
-  background-image: url("https://raw.githubusercontent.com/fkhan698/LED-Lights/main/images/exterior.jpeg");
+  background-image: url("https://raw.githubusercontent.com/fkhan698/assets/main/exterior.jpeg");
   min-height: 100%;
   width: 100%;
   position: relative;
